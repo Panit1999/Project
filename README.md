@@ -130,9 +130,7 @@ void CheckIn(){
                         if(EnW == "Y" || EnW == "y")Room[i][3] = 1;else Room[i][3] = 2;
                         cout<<"---Successfull--- \n";
                         break;
-                    }
-                }
-            }
+                    }}}
             else {
                 Data[i][2] = 2;
                 Data[i][4] = Guest;
@@ -144,17 +142,10 @@ void CheckIn(){
                         Room[i][0] = RoomID;
                         cout<<"---Successfull--- \n";
                         break;
-                    }
-                }
+                    }}
                 for(int i = 0;i < 10;i++){
                     cout<<Room[i][0]<<" "<<Room[i][1]<<" "<<Room[i][2]<<" "<<Room[i][3]<<" \n";
-                }
-                
-            }
-        }
-        
-    }
-}
+                }}}}}
 void CheckOut(){
     string Deposit,RoomP,EnW;
     int RoomID,Guest,D,R,E;
@@ -180,21 +171,14 @@ void CheckOut(){
                                 Data[j][4] = 0;
                                 cout<<"***Checkout Successfull***\n";
                                 break;
-                            }
-                        }
-                    }
-                }
-            }
+                            }}}}}
             else {
                 cout<<"!!!not paid yet!!! \n";
                 cout<<"!Comeback to Pay! \n";
-            }
-        }
-    }
+            }}}
     for(int i = 0;i < 10;i++){
                     cout<<Room[i][0]<<" "<<Room[i][1]<<" "<<Room[i][2]<<" "<<Room[i][3]<<" \n";
-    }
-}
+    }}
 
 void Show(){
     string type = " ",status = " ",Exname = " ",Deposit = " ",RoomP = " ",EnW = " ",Suba,Phonea;
